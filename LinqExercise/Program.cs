@@ -103,7 +103,7 @@ namespace LinqExercise
             Console.WriteLine("Employees over 26:");
             foreach (var name in overTwentySix)
             {
-                Console.WriteLine($"Age: {name.Age} First name: {name.FirstName} YOE: {name.YearsOfExperience}");
+                Console.WriteLine($"Age: {name.Age} First name: {name.FirstName} Last name: {name.LastName} YOE: {name.YearsOfExperience}");
             }
             //TODO: Print the Sum and then the Average of the employees' YearsOfExperience if their YOE is less than or equal to 10 AND Age is greater than 35.
             var yOE = employees.Where(x => x.YearsOfExperience <= 10 && x.Age > 35);
